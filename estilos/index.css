@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/*Header*/
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center; 
+    position:sticky;/*para que quede fijo mientras scrolean*/
+    top:0px;
+    background-color: rgb(106, 9, 125,.9);
+    z-index: 2;   
+}
+
+/*Navegation*/
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;/*posicion horizontal*/ 
+    align-items: center;/*Posicion vertical*/
+}
+
+.logo img{
+    width: 9rem;
+    height: 4rem;
+}
+
+.bar-btn{
+    color: white;
+    font-size: 2rem;
+    cursor:pointer;/*para que cambie la forma del cursor y el usuario sepa que se puede seleccionar*/  
+}
+
+.nav-menu{
+    width: 100%;
+    height: 0vh;/*le doy ese valor, para que se mantega oculto mientras no esta seleccionado el checkbox*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;/*centro de manera vertical*/
+    top: 80px;/*lo posiciono abajo del header*/
+    position: fixed;
+    list-style: none;
+    background-color:rgb(106, 9, 125,.6);
+    text-align: center;/*posiciono el texto en el centro*/
+ 
+   }
+
+.nav-menu li{
+    display: none;/*lo oculto mientras no este seleccionado*/
+    padding: 1.5rem;
+    transition: all .4s;/*Efecto mas suave cuando aparece el nav, da el efecto como que se desplega de arriba*/   
+}
+
+.nav-menu li:hover{
+    transform: scale(1.1,1.1);
+}
+
+.nav-menu li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase; /*Para poner todo el texto en mayuscula*/
+}
+
+.nav-menu li a:hover{
+    font-weight: 100;
+    color:rgb(231, 225, 231);
+    transition: .3s; /*Efecto para que cambie de color mas sueve*/     
+}
+
+#check {
+    display: none;/*Para ocultar el checkbox*/
+}
+
+#check:checked ~ .nav-menu{
+   height: 70vh;
+  
+}
+
+#check:checked ~ .nav-menu li{
+    display: block; 
+}
+
+#check:checked ~ .nav-menu li:hover{
+    background-color: rgba(177, 104, 245, 0.5);
+    transition: .9s;
+    box-shadow:  5px 5px 30px rgb(138, 43, 226, .6);
+    padding: 1rem;
+}
+
+section{
+    margin: 2rem 0;
+}
+
+
+.d-block, .img{/*filtro para las imagenes del carrusel y las de la seccion bienvenida*/
+    filter: brightness(60%);
+}
+
+/*Carrusel*/
+
+.carousel-inner{
+    height: 40vh;
+}
+
+/*Seccion bienvenida*/
+
+h1{
+    text-align: center;
+}
+
+.section_bienvenida{
+    border: 3px green solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartel-bienvenida{
+    position: relative;
+    border: solid 3px palevioletred;
+}
+
+.contenedor-img{
+   border: solid red 2px;
+   display: flex;
+   position: relative;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 50%;
+
+
+}
+
+.contenedor-img img{
+    width: 100%;
+    border-radius: 20px;
+    margin: 1rem 0;
+    border: solid yellow 3px;     
+}
+
+
+.section_bienvenida p{
+    width: 60%;
+    font-size: .8rem;
+    padding: 1rem;
+    border-radius: 15px;
+    background-color: aliceblue;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 40%;
+    top: 20%;
+    -webkit-box-shadow: 5px 5px 28px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 28px -6px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 28px -6px rgba(0,0,0,0.75);
+}
+
+
+
+
+
+
+
