@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Hotel carolina & Spa</title>
+
+	<!-- Intl-tel-input -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.css">
+
+	<!-- Fontawesome -->
+	<script src="https://kit.fontawesome.com/a924f2ed5c.js" crossorigin="anonymous"></script>
+
+	<!-- styles -->
+	<link rel="stylesheet" href="./estilos/universal.css">
+	<link rel="stylesheet" href="./estilos/header.css">
+	<link rel="stylesheet" href="./estilos/contact.css">
+	<link rel="stylesheet" href="./estilos/footer.css">
+
+	<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js"></script>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<div class="logo">
+				<img src="img/logo sin fondo.png" alt="">
+			</div>
+			<input type="checkbox" id="check">
+			<label for="check" class="bar-btn">
+				<i class="fa-solid fa-bars"></i>
+			</label>
+			<ul class="nav-menu">
+				<li><a href="./index.html">Inicio</a></li>
+				<li><a class="active" href="./contact.html">Contactanos</a></li>
+				<li><a href="./">Galeria</a></li>
+				<li><a href="#">Preguntas frecuentes</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section>
+			<p>
+				Texto para contacto. Alguna idea de la gente del hotel?
+			</p>
+			<form action="GET">
+				<input type="text" name="form-forename" id="form-forename" placeholder="Nombre(s)">
+				<input type="text" name="form-surname" id="form-surname" placeholder="Apellido(s)">
+				<input type="email" name="form-email" id="form-email" placeholder="correo@ejemplo.com">
+				<input type="tel" name="form-tel" id="form-tel" placeholder="11-5555-5555" pattern="(0-9){3}-">
+			</form>
+		</section>
+	</main>
+</body>
+
+</html>
