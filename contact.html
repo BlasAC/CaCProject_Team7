@@ -14,9 +14,13 @@
 	<!-- Fontawesome -->
 	<script src="https://kit.fontawesome.com/a924f2ed5c.js" crossorigin="anonymous"></script>
 
+	<!-- Animate.style -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
 	<!-- styles -->
 	<link rel="stylesheet" href="./estilos/universal.css">
 	<link rel="stylesheet" href="./estilos/header.css">
+	<link rel="stylesheet" href="./estilos/body.css">
 	<link rel="stylesheet" href="./estilos/contact.css">
 	<link rel="stylesheet" href="./estilos/footer.css">
 
@@ -35,23 +39,49 @@
 			</label>
 			<ul class="nav-menu">
 				<li><a href="./index.html">Inicio</a></li>
-				<li><a class="active" href="./contact.html">Contactanos</a></li>
-				<li><a href="./">Galeria</a></li>
+				<li><a class="active" href="#">Contactanos</a></li>
+				<li><a href="#">Galeria</a></li>
 				<li><a href="#">Preguntas frecuentes</a></li>
 			</ul>
 		</nav>
 	</header>
 	<main>
-		<section>
+		<section class="form-section">
+			<h2 class="form-subtitle">
+				Contáctenos!
+			</h2>
 			<p>
-				Texto para contacto. Alguna idea de la gente del hotel?
+				Espacio para breve texto
 			</p>
-			<form action="GET">
-				<input type="text" name="form-forename" id="form-forename" placeholder="Nombre(s)">
-				<input type="text" name="form-surname" id="form-surname" placeholder="Apellido(s)">
-				<input type="email" name="form-email" id="form-email" placeholder="correo@ejemplo.com">
-				<input type="tel" name="form-tel" id="form-tel" placeholder="11-5555-5555" pattern="(0-9){3}-">
-			</form>
+			<section class="form-container">
+				<form action="GET">
+					<div class="form-row">
+						<input class="form-input" type="text" name="form-forename" id="form-forename" placeholder="Nombre(s)">
+						<label class="form-input-helper" for="form-forename">Nombre(s)</label>
+					</div>
+
+					<div class="form-row">
+						<input class="form-input" type="text" name="form-surname" id="form-surname" placeholder="Apellido(s)">
+						<label class="form-input-helper" for="form-surname">Apellido(s)</label>
+					</div>
+
+					<div class="form-row">
+						<input class="form-input" type="email" name="form-email" id="form-email" placeholder="correo@ejemplo.com">
+						<label class="form-input-helper" for="form-email">Correo</label>
+					</div>
+
+					<div class="form-row">
+						<input class="form-input" type="tel" name="form-tel" id="form-tel" placeholder="11-5555-5555" pattern="(0-9){3}-(0-9){4}-(0-9){4}">
+						<label class="form-input-helper" for="form-tel">Teléfono</label>
+					</div>
+
+					<button id="form-submit" type="submit">Enviar</button>
+					<button id="form-reset" type="reset">Borrar todo</button>
+				</form>
+			</section>
+		</section>
+		<section class="contact-us-section">
+
 		</section>
 	</main>
 </body>
