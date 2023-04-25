@@ -69,8 +69,76 @@ h1{
     box-shadow: 5px 5px 28px -6px rgba(0,0,0,0.75);
 }
 
+/*Seccion Servicios*/
 
 
+.servicios h1 {
+    font-size: 2rem;
+    color: #8c27bb;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.servicios h6 {
+    text-align: center;
+    padding-bottom: 0;
+    
+    
+}
+
+
+.servicios-parte1, .servicios-parte2, .servicios-parte3 {
+    display: flex;
+    /*border: solid 2px red;*/
+    max-height: 200px;
+    
+    
+    
+}
+
+hr {
+    background-color: #8f22c2;
+    height: 2px;
+    width: 50%;
+
+    
+}
+
+
+.desayuno, .heladera, .comedor, .microondas, .wifi, .servios-de-cama {
+    /*border: 2px solid red;*/
+    width: 50%;
+    margin-left: 0.8rem;
+   
+
+}
+
+.info-desayuno, .info-heladera, .info-comedor, .info-microondas, .info-wifi, .info-cama {
+    display: flex;
+}
+
+.desayuno img, .heladera img, .comedor img, .microondas img, .wifi img, .servios-de-cama img {
+    width: 28px;
+    height: 28px;
+    /*border: 2px solid violet; */
+    margin-right: 0.4rem;
+}
+
+.p1 {
+    font-size: 1rem;
+    color: #8f22c2;
+    font-weight: bold;
+
+}
+
+.p2 {
+    font-size: 0.7rem;
+}
+
+
+
+
+/*Seccion Servicios Adicionales*/
 .servicios-adicionales h1 {
     /*border: 2px solid red;*/
     color: rgb(77, 3, 146);
