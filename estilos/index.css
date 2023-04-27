@@ -71,53 +71,47 @@ h1{
 
 /*Seccion Servicios*/
 
-
 .servicios h1 {
-    font-size: 2rem;
     color: #8c27bb;
     text-align: center;
     margin-bottom: 0;
+    background-color: #eee7e7;
+    padding: 1rem;
+    margin: 0;
 }
 
 .servicios h6 {
     text-align: center;
     padding-bottom: 0;
-    
-    
+    margin-top: 0.8rem; 
 }
-
 
 .servicios-parte1, .servicios-parte2, .servicios-parte3 {
     display: flex;
     /*border: solid 2px red;*/
     max-height: 200px;
-    
-    
-    
+    justify-content: center;
+    margin-top: 1rem; /*    VER ESTOS DOS*/
+    margin-bottom: 1rem; 
 }
 
 hr {
     background-color: #8f22c2;
     height: 2px;
-    width: 50%;
-
-    
+    width: 40%;   
 }
 
-
-.desayuno, .heladera, .comedor, .microondas, .wifi, .servios-de-cama {
+.desayuno, .heladera, .comedor, .microondas, .wifi, .servicio-de-cama {
     /*border: 2px solid red;*/
-    width: 50%;
+    width: 49%;
     margin-left: 0.8rem;
-   
-
 }
 
 .info-desayuno, .info-heladera, .info-comedor, .info-microondas, .info-wifi, .info-cama {
     display: flex;
 }
 
-.desayuno img, .heladera img, .comedor img, .microondas img, .wifi img, .servios-de-cama img {
+.desayuno img, .heladera img, .comedor img, .microondas img, .wifi img, .servicio-de-cama img {
     width: 28px;
     height: 28px;
     /*border: 2px solid violet; */
@@ -128,7 +122,7 @@ hr {
     font-size: 1rem;
     color: #8f22c2;
     font-weight: bold;
-
+    margin-bottom: 0.1rem;
 }
 
 .p2 {
@@ -145,8 +139,7 @@ hr {
     background-color: #eee7e7;
     text-align: center;
     padding: 1rem;
-    margin: 0;
-    
+    margin: 0;    
 }
 
 .contenedor-img-masajes {
@@ -160,6 +153,11 @@ hr {
     display: block;
 }
 
+.titulo1,  .titulo2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.2rem;
+}
+
 .texto-masajes {
     /*border: 2px solid red;*/
     background-color: rgba(36, 33, 33, 0.7);
@@ -168,12 +166,8 @@ hr {
     width: 50%;
     color: #cfcaca;
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.8rem;
     padding: .5rem;
-}
-
-.titulo,  .titulo2 {
-    font-size: 1.5rem;
 }
 
 .contenedor-img-sauna {
@@ -194,9 +188,125 @@ hr {
     width: 50%;
     color: #cfcaca;
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.8rem;
     padding: .5rem;
 }
+
+
+@media screen and (min-width: 552px) {
+    .servicios h6 {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
+
+.servicios-parte1, .servicios-parte2, .servicios-parte3 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+    .desayuno, .heladera, .comedor, .microondas, .wifi, .servicio-de-cama {
+        width: 40%;
+    }
+    
+    .desayuno img, .heladera img, .comedor img, .microondas img, .wifi img, .servicio-de-cama img {
+        width: 3rem;
+        height: 3rem;
+    }
+    .p1 {
+        font-size: 120%;
+        margin-left: 1rem;
+    }
+
+    .p2 {
+        font-size: 80%;
+        margin-left: 1rem;
+    }
+   
+}
+
+
+@media screen and (min-width: 700px){  
+    .contenedor-img-masajes img, .contenedor-img-sauna img{
+        height: 350px;      
+    }
+    .titulo1,  .titulo2{
+        font-size: 1.7rem;
+    }
+    .texto-masajes, .texto-sauna{
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (min-width: 850px) {
+    .servicios h6 {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
+    .servicios-parte1, .servicios-parte2, .servicios-parte3 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .desayuno, .heladera, .comedor, .microondas, .wifi, .servicio-de-cama {
+        width: 40%;
+    }
+    .desayuno img, .heladera img, .comedor img,.microondas img, .wifi img, .servicio-de-cama img
+     {
+        width: 3rem;
+        height: 3rem;
+    } 
+    .p1 {
+        font-size: 140%;
+        margin-left: 1rem;
+    }
+    .p2 {
+        font-size: 110%;
+        margin-left: 1rem;
+    }
+}
+
+
+@media screen and (min-width: 850px) {
+    .servicios h6 {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
+    .servicios-parte1, .servicios-parte2, .servicios-parte3 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .desayuno, .heladera, .comedor, .microondas, .wifi, .servicio-de-cama {
+        width: 40%;
+    }
+    .desayuno img, .heladera img, .comedor img,.microondas img, .wifi img, .servicio-de-cama img
+     {
+        width: 3rem;
+        height: 3rem;
+    } 
+    .p1 {
+        font-size: 140%;
+        margin-left: 1rem;
+    }
+    .p2 {
+        font-size: 110%;
+        margin-left: 1rem;
+    }
+
+}
+
+
+@media screen and (min-width: 900px){
+    .contenedor-img-masajes img, .contenedor-img-sauna img{
+       height: 550px;       
+    }
+    .titulo1,  .titulo2{
+        font-size: 2.4rem;
+    }
+    .texto-masajes, .texto-sauna{
+        font-size: 1.2rem;
+    }
+}
+
 
 
 
