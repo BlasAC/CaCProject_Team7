@@ -28,7 +28,7 @@
 	<header>
 		<nav>
 			<div class="logo">
-				<img src="img/logo sin fondo.png" alt="">
+				<img src="./img/logo sin fondo.png" alt="">
 			</div>
 			<input type="checkbox" id="check">
 			<label for="check" class="bar-btn">
@@ -44,11 +44,11 @@
 	</header>
 	<main>
 		<section class="form-section">
-			<h2 class="form-subtitle">
-				Contáctenos!
-			</h2>
+			<h3 class="form-subtitle">
+				¿Nos ponemos en contacto con usted?
+			</h3>
 			<p>
-				Espacio para breve texto
+				Puede dejarnos sus datos y lo haremos a la brevedad
 			</p>
 			<section class="form-container">
 				<form action="GET">
@@ -71,14 +71,54 @@
 						<input class="form-input" type="tel" name="form-tel" id="form-tel" placeholder="11-5555-5555" pattern="(0-9){3}-(0-9){4}-(0-9){4}">
 						<label class="form-input-helper" for="form-tel">Teléfono</label>
 					</div>
+					<input type="checkbox" name="contact-by-phone" id="contact-by-phone">
+					<label for="contact-by-phone">Tilde esta casilla si prefiere contacto telefónico.</label>
 
-					<button id="form-submit" type="submit">Enviar</button>
-					<button id="form-reset" type="reset">Borrar todo</button>
+					<div class="form-row">
+						<h4>
+							En qué servicios está interesado/a?
+						</h4>
+						<div class="form-subrow">
+							<input type="checkbox" name="form-service-stay" id="form-service-stay">
+							<label for="form-service-stay">Estadía</label>
+						</div>
+						<div class="form-subrow">
+							<input type="checkbox" name="form-service-sauna" id="form-service-sauna">
+							<label for="form-service-sauna">Sauna</label>
+						</div>
+						<div class="form-subrow">
+							<input type="checkbox" name="form-service-massages" id="form-service-massages">
+							<label for="form-service-massages">Masajes</label>
+						</div>
+					</div>
+
+					<div class="form-row buttons-row">
+						<button id="form-submit" type="submit">Enviar</button>
+						<button id="form-reset" type="reset">Borrar todo</button>
+					</div>
 				</form>
 			</section>
 		</section>
+		<hr>
 		<section class="contact-us-section">
-
+			<h3 class="contact-us-subtitle">
+				¿O prefiere contactarnos?
+			</h3>
+			<nav class="contact-us-nav">
+				<a href="https://www.instagram.com/carolinahotelyspa/" target="_blank">@carolinahotelyspa</a>
+				<a href="https://api.whatsapp.com/send/?phone=542291570540&text&type=phone_number&app_absent=0" target="_blank">WhatsApp</a>
+				<a href="tel:+54 2291 57-0540">+54 2291 57-0540</a>
+			</nav>
+		</section>
+		<hr>
+		<section class="map-section">
+			<h3 class="map-subtitle">
+				Venga a visitarnos:
+			</h3>
+			<p class="map-address">
+				Calle 11 - Nro 1144 entre Calles 22 y 24 - Miramar
+			</p>
+			<iframe id="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1566.2576025030744!2d-57.83396464872722!3d-38.267548374626955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x958510877bed32a3%3A0x731713bba15904ce!2sC.%2011%201144%2C%20Miramar%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1682879095222!5m2!1sen!2sar" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 		</section>
 	</main>
 </body>
