@@ -29,7 +29,7 @@
 	<header>
 		<nav>
 			<div class="logo">
-				<img src="./img/logo sin fondo.webp" alt="">
+				<img src="./img/logo sin fondo.webp" alt="logo del hotel">
 			</div>
 			<input type="checkbox" id="check">
 			<label for="check" class="bar-btn">
@@ -49,13 +49,13 @@
 			<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
 				<div class="carousel-inner">
 					<div class="carousel-item active">
-						<img src="./img/florero2.webp" class="d-block w-100" alt="...">
+						<img src="./img/florero2.webp" class="d-block w-100" alt="florero en el baño">
 					</div>
 					<div class="carousel-item">
-						<img src="./img/habDoble.webp" class="d-block w-100" alt="...">
+						<img src="./img/habDoble.webp" class="d-block w-100" alt="Habitacion doble">
 					</div>
 					<div class="carousel-item">
-						<img src="./img/gym.webp" class="d-block w-100" alt="...">
+						<img src="./img/gym.webp" class="d-block w-100" alt="gimnasio">
 					</div>
 				</div>
 				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
@@ -76,8 +76,8 @@
 			<h1>Bienvenidos al Hotel carolina & spa</h1>
 			<section class="cartel-bienvenida">
 				<section class="contenedor-img">
-					<img src="./img/recepcion.jpg" alt="Recepcion" class="img">
-					<img src="./img/patioInterno.jpg" alt="Patio interno del hotel" class="img">
+					<img src="./img/recepcion.webp" alt="Recepcion" class="img">
+					<img src="./img/patioInterno.webp" alt="Patio interno del hotel" class="img">
 				</section>
 				<p>El hotel está situado en una zona muy tranquila donde podra descansar, a 5 cuadras
 					del centro de la ciudad y 5 cuadras de las playas del centro.
@@ -86,9 +86,54 @@
 			</section>
 		</section>
 
+
 		<section class="section-habitaciones section">
-			<p>Las habitaciones del Hotel Carolina y Spa son acogedoras y luminosas. Están
-				equipadas con cómodas camas, baño privado, televisión por cable, conexión Wi-Fi gratuita.</p>
+			<h1>Habitaciones</h1>
+			<p>Las habitaciones son acogedoras y luminosas. Están
+				equipadas con cómodas camas, baño privado, caja fuerte, secador de pelo, televisión por cable, amenities de baño(shampoo, acondicionador, jabón de tocador).
+			</p>
+
+			<!--Carrusel boostrap de habitaciones-->
+			<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-indicators">
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+						class="active" aria-current="true" aria-label="Slide 1"></button>
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+						aria-label="Slide 2"></button>
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+						aria-label="Slide 3"></button>
+				</div>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="./img/dobleMat.webp" class="d-block w-100" alt="habitacion doble matrimonial">
+						<div class="carousel-caption d-md-block">
+							<h4>Habitacion doble</h4>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img src="./img/habTriple.webp" class="d-block w-100" alt="habitacion triple matrimonial">
+						<div class="carousel-caption d-md-block">
+							<h4>Habitacion triple</h4>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img src="./img/habTripleIndividual.webp" class="d-block w-100" alt="habitacion triple individual">
+						<div class="carousel-caption d-md-block">
+							<h4>Habitacion triple individual</h4>
+						</div>
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+					data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+					data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
 		</section>
 
 		<section class="servicios section">
@@ -165,6 +210,8 @@
 				</section>
 			</section>
 		</section>
+
+		
 	
 
 		<section class="servicios-adicionales section">
