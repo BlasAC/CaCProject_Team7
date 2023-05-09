@@ -24,39 +24,39 @@ main {
 
 
 h1 {
-   padding-top: 1.5rem;
-   padding-bottom: 0.1rem;
+   padding-top: 1.8rem;
    text-align: center;
-   /*border: solid 2px red;*/
+   /*border: solid 2px yellow;*/
 }
 
 .fotos {
-    /*border: 2px solid red;*/
+    /*border: 2px solid green;*/
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem; 
-    padding: 3rem 1.5rem 3rem;
+    gap: 0.5rem; 
+    padding: 2rem 1.5rem 3rem;
     margin: 0;  
 }
 
 
 .fotos img{
-    width: 400px; 
-    height: 400px;
+    width: 250px; 
+    height: 250px;
+    /*border: solid 2px red;*/
     border-radius: 2%;
      
 }
 
 
 main img:hover:nth-child(odd) {
-    transform: rotate(1.2deg) scale(1.2,1.2);
+    transform: rotate(1.2deg) scale(1.1,1.1);
     transition: 1ms ease-out;
     
 }
 
 main img:hover:nth-child(even) {
-    transform: rotate(-1.2deg) scale(1.2,1.2);
+    transform: rotate(-1.2deg) scale(1.1,1.1);
     transition: 1ms ease-in;
     
 }
@@ -64,8 +64,8 @@ main img:hover:nth-child(even) {
 
 #cartel {
     animation:shadow-inset-center 0.4s linear both;
-    width: 400px; 
-    height: 400px;   
+    width: 250px; 
+    height: 250px;   
     z-index: 1;
   /*  border: 2px solid black;
     border-radius: 0%;*/
@@ -73,10 +73,43 @@ main img:hover:nth-child(even) {
 }
 
 
-
-/*  ver si lo necesito y ver si puedo usar el scale  + hovver en celulares
-@media (hover:hover) {
-    main img:hover {
-        transform: scale(2,2);
+@media screen and (min-width: 450px){
+    .fotos img{
+        width: 300px; 
+        height: 300px;
+        gap: 0.8rem;
+        margin-top: 1rem;
     }
+    #cartel{
+        width: 300px; 
+        height: 300px;
+        gap: 0.8rem;
+        margin-top: 1rem;
+    }
+}
+@media screen and (min-width: 650px) {
+    .fotos img {
+        width: 350px; 
+        height: 350px;
+        margin-left: 2px;
+        margin-right: 2px;
+   }
+   #cartel{
+        width: 350px; 
+        height: 350px;
+        margin-left: 2px;
+        margin-right: 2px;
+   }
+
+}
+    
+@media screen and (min-width: 950px) {
+    .fotos img {
+        width: 375px; 
+        height: 375px;
+   }
+   #cartel{
+        width: 375px; 
+        height: 375px;
+   }
 }

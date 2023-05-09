@@ -65,7 +65,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color:rgb(238, 231, 231,.6); ;
+    background-color:rgb(238, 231, 231,.6);
+    margin-bottom: 0;
 }
 
 .section-habitaciones p{
@@ -82,16 +83,15 @@
 
 /*Seccion Servicios*/
 
-.servicios h1 {
-    color: #8c27bb;
+.servicios-section h1 {
     text-align: center;
     margin-bottom: 0;
-    background-color: #eee7e7;
+    background-color: rgb(238, 231, 231);
     padding: 1rem;
     margin: 0;
 }
 
-.servicios h6 {
+.servicios-section h6 {
     text-align: center;
     padding-bottom: 0;
     margin-top: 0.8rem; 
@@ -148,8 +148,7 @@ hr {
 /*Seccion Servicios Adicionales*/
 .servicios-adicionales h1 {
     /*border: 2px solid red;*/
-    color: rgb(77, 3, 146);
-    background-color: #eee7e7;
+    background-color: rgb(238, 231, 231);
     text-align: center;
     padding: 1rem;
     margin: 0;    
