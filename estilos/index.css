@@ -1,20 +1,58 @@
-*{
-    margin: 0;
+.img{/*filtro para las imagenes del carrusel y las de la seccion bienvenida*/
+    filter: brightness(55%);
 }
 
-.d-block, .img{/*filtro para las imagenes del carrusel y las de la seccion bienvenida*/
-    filter: brightness(70%);
+
+/*slider principal*/
+
+.container-slider{
+   width: 100%;
+   overflow: hidden;
+   position: relative;
 }
 
-/*seccion carrusel*/
-.carrusel .slide{
-    height: 15rem;
+.slider{
+    display: flex;
+    width: 300%;
+    height: auto;
+    margin-left: -100%;
 }
 
-.carrusel .slide .carousel-inner{
+.slider_section{
     width: 100%;
-    height: 100%;
 }
+
+.slider_img{
+    display: block;
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+.slider_btn{
+    position: absolute;
+    display: flex;
+    color: rgba(255, 255, 255,.5);
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.slider_btn:hover{
+    color: white;
+    transition: 2s;
+    font-size: 35px;
+
+}
+.slider_btn-rigth{
+    right: 5%;
+}
+
+.slider_btn-left{
+    left: 5%;
+}
+
 
 /*Seccion bienvenida*/
 
@@ -66,7 +104,6 @@
     justify-content: center;
     align-items: center;
     background-color:rgb(238, 231, 231,.6);
-    margin-bottom: 0;
 }
 
 .section-habitaciones p{
@@ -76,6 +113,21 @@
 
 
 /*carrusel hab*/
+
+.section-habitaciones .carousel{
+    width: 100%;
+}
+
+.section-habitaciones .carousel-item{
+    width: 100%;
+}
+
+.carousel-item img{
+    object-fit: cover;
+    max-height: 220px;
+}
+
+
 .carousel-caption{
     background-color: rgba(36, 33, 33, 0.3);
 }
@@ -86,8 +138,7 @@
 .servicios-section h1 {
     text-align: center;
     margin-bottom: 0;
-    background-color: rgb(238, 231, 231);
-    padding: 1rem;
+    /*background-color: rgb(238, 231, 231);*/
     margin: 0;
 }
 
@@ -148,7 +199,7 @@ hr {
 /*Seccion Servicios Adicionales*/
 .servicios-adicionales h1 {
     /*border: 2px solid red;*/
-    background-color: rgb(238, 231, 231);
+    background-color:rgb(238, 231, 231,.6);
     text-align: center;
     padding: 1rem;
     margin: 0;    
@@ -163,6 +214,7 @@ hr {
     /*border: solid green 2px;*/
     width: 100%;
     display: block;
+    object-fit: cover;
 }
 
 .titulo1,  .titulo2 {
@@ -189,6 +241,7 @@ hr {
 .contenedor-img-sauna img {
     /*border: solid green 2px;*/
     width: 100%;
+    object-fit: cover;
 }
 
 .texto-sauna {
@@ -203,6 +256,9 @@ hr {
     font-size: 0.8rem;
     padding: .5rem;
 }
+
+
+
 
 
 /*medias queris*/
@@ -243,6 +299,12 @@ hr {
     .section-habitaciones .carousel{
         width: 90%;
     }
+
+    .carousel-item img{
+        object-fit: cover;
+        max-height: 245px;
+    }
+    
 }
 
 
@@ -275,6 +337,11 @@ hr {
         font-size: 80%;
         margin-left: 1rem;
     }
+
+     /*seccion habitaciones carrusel*/
+    .carousel-item img{
+        max-height: 360px;
+    }
    
 }
 
@@ -288,6 +355,11 @@ hr {
     }
     .texto-masajes, .texto-sauna{
         font-size: 1rem;
+    }
+
+    /*seccion habitaciones carrusel*/
+    .carousel-item img{
+        max-height: 473px;
     }
 }
 
@@ -317,6 +389,7 @@ hr {
         font-size: 110%;
         margin-left: 1rem;
     }
+    
 }
 
 
@@ -345,15 +418,16 @@ hr {
         font-size: 1.5rem;
         margin: 1rem;
     }
-    /*seccion carrusel*/
-    .carrusel .slide{
-        height: 38rem;
-    }
+   
     
-
     /*seccion habitaciones carrusel*/
     .section-habitaciones .carousel{
-        width: 80%;
+        width: 70%;
+    }
+
+    .carousel-item img{
+        object-fit: cover;
+        max-height: 500px;
     }
 
     .carousel-caption h4{

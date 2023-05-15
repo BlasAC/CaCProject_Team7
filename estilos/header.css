@@ -60,6 +60,11 @@ nav {
     letter-spacing: 3px;
 }
 
+.nav-menu li .active{
+
+
+}
+
 .nav-menu li a:hover {
     font-weight: 100;
     color:rgb(231, 225, 231);
@@ -134,7 +139,6 @@ nav {
 
     .nav-menu a{
         position: relative;
-
     }
 
     .nav-menu a::after{
@@ -151,7 +155,7 @@ nav {
         transition: transform .5s;
     }
 
-    .nav-menu a:hover::after{
+    .nav-menu a:hover::after {
         transform-origin: left;
         transform: scaleX(1);
     }
