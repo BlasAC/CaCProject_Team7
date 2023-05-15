@@ -37,6 +37,7 @@
     transform: translateY(-50%);
     font-size: 30px;
     cursor: pointer;
+    border: solid saddlebrown 4px;
 }
 
 .slider_btn:hover{
