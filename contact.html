@@ -6,6 +6,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+
 	<title>Hotel carolina & Spa</title>
 
 	<!-- Intl-tel-input -->
@@ -21,8 +23,10 @@
 	<link rel="stylesheet" href="./estilos/contact.css">
 	<link rel="stylesheet" href="./estilos/footer.css">
 
-	<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js"></script>
-</head>
+	<!--
+		<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js"></script>
+	-->
+	</head>
 
 <body>
 
@@ -44,6 +48,8 @@
 		</nav>
 	</header>
 	<main>
+
+		
 		<section class="form-section">
 			<h3 class="form-subtitle">
 				¿Nos ponemos en contacto con usted?
@@ -52,7 +58,7 @@
 				Puede dejarnos sus datos y lo haremos a la brevedad
 			</p>
 			<section class="form-container">
-				<form action="GET">
+				<form action="">
 					<div class="form-row">
 						<input class="form-input" type="text" name="form-forename" id="form-forename" placeholder="Nombre(s)">
 						<label class="form-input-helper" for="form-forename">Nombre(s)</label>
@@ -75,6 +81,7 @@
 					<input type="checkbox" name="contact-by-phone" id="contact-by-phone">
 					<label for="contact-by-phone">Tilde esta casilla si prefiere contacto telefónico.</label>
 
+					<!-- 
 					<div class="form-row">
 						<h4>
 							En qué servicios está interesado/a?
@@ -92,14 +99,32 @@
 							<label for="form-service-massages">Masajes</label>
 						</div>
 					</div>
+					-->
+
+					
+					<div class="opciones">
+						<h4>¿En qué servicios esta interesado?</h4>
+						<select name=interes id="intereses">
+							<option value="Elegir">Elegir
+							<option value="Comercial">Contacto comercial
+							<option value="Clientes">Atención al cliente
+							<option value="Proveedores">Contacto de proveedores
+						</select>
+					</div>
+					
 
 					<div class="form-row buttons-row">
-						<button id="form-submit" type="submit">Enviar</button>
+						<button id="form-submit" type="button" onclick="validarFormulario()">Enviar</button>
 						<button id="form-reset" type="reset">Borrar todo</button>
 					</div>
 				</form>
 			</section>
 		</section>
+
+		<p id="error"></p>
+
+		
+   <!--
 		<hr>
 		<section class="contact-us-section">
 			<h3 class="contact-us-subtitle">
@@ -111,6 +136,7 @@
 				<a href="tel:+54 2291 57-0540">+54 2291 57-0540</a>
 			</nav>
 		</section>
+	-->
 		<hr>
 		<section class="map-section">
 			<h3 class="map-subtitle">
@@ -121,7 +147,14 @@
 			</p>
 			<iframe id="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1566.2576025030744!2d-57.83396464872722!3d-38.267548374626955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x958510877bed32a3%3A0x731713bba15904ce!2sC.%2011%201144%2C%20Miramar%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1682879095222!5m2!1sen!2sar" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 		</section>
+	
 	</main>
+	
+
+	<script src="./js/contac.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   	
 </body>
 
 </html>
+
