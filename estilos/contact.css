@@ -133,6 +133,7 @@ form button:hover{
 .map-section {
 	display: flex;
 	flex-direction: column;
+	margin-bottom: 1rem;
 }
 
 .map-section h3 {

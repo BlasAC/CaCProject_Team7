@@ -3,48 +3,28 @@ const componente0 = {
     template: `
     <footer class="content-footer">
         <section class="footer1">
-            <section class="nave">
-                <section class="titulo">
-                    <h4 class="t4">NAVEGACIÓN</h4>
-                </section>
-                <section class="items1">
-                    <a href="#">🏠 INICIO</a>
-                    <a href="#">📆 CALENDARIO</a>
-                    <a href="#">☎️ CONSULTAS</a>
-                    <a href="#">📸 GALERÍA</a>
-                    <a href="#">💲 MEDIOS DE PAGO</a>
-                    <a href="#">🎀 NOVEDADES</a>
-                    <a href="#">❓ PREGUNTAS FRECUENTES</a>
-                    <a href="#">📢 PROMOCIONES</a>
-                    <a href="#">✅ RESERVAS</a>
-                    <a href="#">💱 POLÍTICAS DE DEVOLUCIÓN</a>
-                </section>
-            </section>
-
+           
+            <img class="footer-logo" src="./img/logoHotel.webp" alt="logo del hotel">
+            
             <section class="cont">
                 <section class="contactanos">
                     <section class="titulo">
-                        <h4 class="t4">CONTÁCTANOS</h4>
+                        <h4 class="t4">SIGAMOS EN CONTACTO</h4>
                     </section>
-                    <section class="items2">
+                    <nav class="items2">
                         <a href="#">📞: +54 2291 57-0540</a>
-                        <a href="#">📧: @carolinahotelyspa</a>
                         <a href="#">📧: carolinahotelyspa@gmail.com</a>
-                        <a href="#">🔍: Calle 11 N° 1144 entre 22 y 24 (a 5 cuadras de la playa) (B7607) - Miramar - Buenos Aires - República Argentina 🇦🇷</a>
-                    </section>
+                        <a href="#">🔍: Calle 11 N° 1144 entre 22 y 24 (Miramar - Bs As)</a>
+                    </nav>
                 </section>
                 <section class="redes">
                     <section class="titulo">
-                        <h4 class="t4">NUESTRAS REDES SOCIALES</h4>
+                        <h4 class="t4">NUESTRAS REDES</h4>
                     </section>
                     <nav class="items3">
                         <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook fa-4x" aria-hidden="true"></i></a>
-                        <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram fa-4x" aria-hidden="true"></i></a>
-                        <a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin fa-4x" aria-hidden="true"></i></a>
-                        <a href="https://www.pinterest.com" target="_blank"><i class="fa fa-pinterest fa-4x" aria-hidden="true"></i></a>
-                        <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter fa-4x" aria-hidden="true"></i></a>
-                        <a href="https://www.whatsapp.com" target="_blank"><i class="fa fa-whatsapp fa-4x" aria-hidden="true"></i></a>
-                        <a href="https://www.youtube.com" target="_blank"><i class="fa fa-youtube fa-4x" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/carolinahotelyspa/" target="_blank"><i class="fa fa-instagram fa-4x" aria-hidden="true"></i></a>
+                        <a href="https://api.whatsapp.com/send/?phone=542291570540&text&type=phone_number&app_absent=0" target="_blank"><i class="fa fa-whatsapp fa-4x" aria-hidden="true"></i></a>
                     </nav>
                 </section>
             </section>
@@ -55,32 +35,36 @@ const componente0 = {
                 </section>
 
                 <section class="content-tarjetas">
-
-                    <section class="col-h5">
-                        <h5>Tarjetas de Débito:</h5>
-                        <h5>Tarjetas de Crédito:</h5>
-                        <h5>Transferencia Bancaria:</h5>
-                        <h5>Efectivo:</h5>
-                    </section>
-
                     <section class="col-items">
-                        <section class="item-deb">
-                            <img src="./img/tarjetas/banelco100x70.jpg" alt="Logo Banelco">
-                            <img src="./img/tarjetas/link70x70.jpg" alt="Logo Link">
+                        <section class="item-debito">
+                            <h5>Débito:</h5>
+                            <section class="item-deb" >
+                                <img src="./img/tarjetas/banelco100x70.jpg" alt="Logo Banelco">
+                                <img src="./img/tarjetas/link70x70.jpg" alt="Logo Link">
+                            </section>
                         </section>
-                        <section class="item-cre">
-                            <img src="./img/tarjetas/visa100x70.jpg" alt="Logo Visa">
-                            <img src="./img/tarjetas/master100x70.jpg" alt="Logo Mastercard">
+                        <section class="item-credito">
+                            <h5>Credito:</h5>
+                            <section class="item-cre" >
+                                <img src="./img/tarjetas/visa100x70.jpg" alt="Logo visa">
+                                <img src="./img/tarjetas/master100x70.jpg" alt="Logo Mastercard">
+                            </section>
                         </section>
-                        <section class="item-tra">
-                            <img src="./img/tarjetas/transf70x70.jpg" alt="Logo Transfer">
-                            <img src="./img/tarjetas/ppal70x70.jpg" alt="Logo PayPal">
+                        <section class="item-transfe">
+                            <h5>Transferencia:</h5>
+                            <section class="item-cre" >
+                                <img src="./img/tarjetas/transf70x70.jpg" alt="Logo Transfer">
+                                <img src="./img/tarjetas/ppal70x70.jpg" alt="Logo PayPal">
+                            </section>
                         </section>
-                        <section class="item-efe">
-                            <img src="./img/tarjetas/mp70x70.jpg" alt="Logo MercadoPago">
-                            <img src="./img/tarjetas/pesosar50x70.jpg" alt="Logo Pesos AR">
-                            <img src="./img/tarjetas/dolusa100x70.jpg" alt="Logo Dolar">
-                            <img src="./img/tarjetas/euro100x70.jpg" alt="Logo Euro">
+                        <section class="item-efect">
+                            <h5>Efectivo:</h5>
+                            <section class="item-ef" >
+                                <img src="./img/tarjetas/mp70x70.jpg" alt="Logo MercadoPago">
+                                <img src="./img/tarjetas/pesosar50x70.jpg" alt="Logo Pesos AR">
+                                <img src="./img/tarjetas/dolusa100x70.jpg" alt="Logo Dolar">
+                                <img src="./img/tarjetas/euro100x70.jpg" alt="Logo Euro">
+                            </section>
                         </section>
                     </section>
                 </section>
@@ -88,12 +72,14 @@ const componente0 = {
         </section>
 
         <section class="footer2">
-            <p>Copyright &copy - 2023 Todos los Derechos Reservados</p>
             <section class="fechayhora">
                 <p id="date"></p><p id="time"></p>
             </section>
-            <p>Desarrollado por "T-7 Team Seven&#xae" (una Startup de Codo a Codo)</p>
+            <p class= "copyright">Copyright &copy - 2023 Todos los Derechos Reservados</p>
+
+            <p class="participantes">Desarrollado por "T-7 Team Seven&#xae" (Startup de Codo a Codo)</p>
         </section>
+
         <script src="js/clock.js"></script>
     </footer>
     `
