@@ -45,6 +45,9 @@ h1 {
     height: 250px;
     /*border: solid 2px red;*/
     border-radius: 2%;
+    object-fit: cover;
+    filter: brightness(85%);
+
      
 }
 
