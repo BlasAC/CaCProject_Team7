@@ -90,10 +90,10 @@ const componente1 = {
     // faq
     template: `
     <section class="content-faq">
-        <nav class="nav-faq">
+        <section class="nav-faq">
             <img src="./img/faq/faqs-022c-h150.png" alt="Logo FAQ">
-            <h1>PREGUNTAS FRECUENTES</h1>
-        </nav>
+            <h1>Preguntas frecuentes</h1>
+        </section>
 
         <details>
             <summary class="rubro">
@@ -105,40 +105,21 @@ const componente1 = {
                         ¿Cuáles son los Medios de Pago disponibles?
                     </summary>
                     <section class="answer">
-                        <section class="mdp">
+                        <section class="mdpFaq">
                             <section class="titulo">
                                 <h4 class="t4">MEDIOS DE PAGO</h4>
                             </section>
-
-                            <section class="content-tarjetas">
-
-                                <section class="col-h5">
-                                    <h5>Tarjetas de Débito:</h5>
-                                    <h5>Tarjetas de Crédito:</h5>
-                                    <h5>Transferencia Bancaria:</h5>
-                                    <h5>Efectivo:</h5>
-                                </section>
-
-                                <section class="col-items">
-                                    <section class="item-deb">
-                                        <img src="./img/tarjetas/banelco100x70.jpg" alt="Logo Banelco">
-                                        <img src="./img/tarjetas/link70x70.jpg" alt="Logo Link">
-                                    </section>
-                                    <section class="item-cre">
-                                        <img src="./img/tarjetas/visa100x70.jpg" alt="Logo Visa">
-                                        <img src="./img/tarjetas/master100x70.jpg" alt="Logo Mastercard">
-                                    </section>
-                                    <section class="item-tra">
-                                        <img src="./img/tarjetas/transf70x70.jpg" alt="Logo Transfer">
-                                        <img src="./img/tarjetas/ppal70x70.jpg" alt="Logo PayPal">
-                                    </section>
-                                    <section class="item-efe">
-                                        <img src="./img/tarjetas/mp70x70.jpg" alt="Logo MercadoPago">
-                                        <img src="./img/tarjetas/pesosar50x70.jpg" alt="Logo Pesos AR">
-                                        <img src="./img/tarjetas/dolusa100x70.jpg" alt="Logo Dolar">
-                                        <img src="./img/tarjetas/euro100x70.jpg" alt="Logo Euro">
-                                    </section>
-                                </section>
+                            <section class="mediosDePago" >
+                                <img src="./img/tarjetas/banelco100x70.jpg" alt="Logo Banelco">
+                                <img src="./img/tarjetas/link70x70.jpg" alt="Logo Link">
+                                <img src="./img/tarjetas/visa100x70.jpg" alt="Logo visa">
+                                <img src="./img/tarjetas/master100x70.jpg" alt="Logo Mastercard">
+                                <img src="./img/tarjetas/transf70x70.jpg" alt="Logo Transfer">
+                                <img src="./img/tarjetas/ppal70x70.jpg" alt="Logo PayPal">
+                                <img src="./img/tarjetas/mp70x70.jpg" alt="Logo MercadoPago">
+                                <img src="./img/tarjetas/pesosar50x70.jpg" alt="Logo Pesos AR">
+                                <img src="./img/tarjetas/dolusa100x70.jpg" alt="Logo Dolar">
+                                <img src="./img/tarjetas/euro100x70.jpg" alt="Logo Euro">
                             </section>
                         </section>
                     </section>

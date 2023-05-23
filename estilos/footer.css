@@ -1,11 +1,14 @@
+
+
 .content-footer {
     display: flex;
     flex-direction: column;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Roboto Flex', 'sans-serif';
     background: linear-gradient(45deg, red, blue, violet, black);
     background-size: 400% 400%;
     position: relative;
     animation: animar 10s ease infinite;
+
 }
 
 
@@ -41,6 +44,7 @@
     display: flex;
     width: 100%;
     justify-content: center;
+    margin: 1rem;
 }
 
 .titulo .t4{
@@ -144,6 +148,8 @@
 
 h5 {
    color: aliceblue;
+   font-family: 'Playfair Display', serif;
+   letter-spacing: 3px;
 }
 
 .footer2 {
@@ -166,6 +172,10 @@ h5 {
     margin: .5rem;
     display: flex;
     justify-content: center;
+}
+
+#time{
+    margin: 0 0 0 .5rem ;
 }
 
 

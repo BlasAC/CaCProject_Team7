@@ -1,118 +1,164 @@
 /***  style6.css (faqs - Walter c/Vue)  ***/
 
-.content-faq{background: rgba(115,8,143,.2); font-family: 'Oxygen', sans-serif;}
-.content-faq .nav-faq{display: flex; justify-content: center;}
-.content-faq .nav-faq img{width: 11%;}
-.content-faq .nav-faq img:hover{animation:rotate-scale-up-vertical 0.8s linear both;}
-.content-faq h1{font-size: 2rem; font-weight: bold; padding-left: 20px;}
+.content-faq {
+  background: rgba(115, 8, 143, .1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 2rem 0 ;
+}
+
+.content-faq .nav-faq {
+  display: flex;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 1rem;
+  padding: .5rem;
+  width: 100%;  
+}
+
+.content-faq .nav-faq img {
+  width: 20%;
+  object-fit: cover;
+}
+
+.content-faq .nav-faq img:hover {
+  animation: rotate-scale-up-vertical 0.8s linear both;
+}
+
+.content-faq h1 {
+  font-size: 2rem;
+  width: auto;
+  font-weight: bold;
+}
 
 /***  politica.html (faqs - Walter c/Vue)  ***/
-.content-reemb h1{padding: 10; font-size: 3rem; text-align: center;}
-.content-reemb h2{padding: 10; font-size: 2.5rem;}
-.content-reemb .cancelRes {padding: 10; font-size: 2rem;}
+.content-reemb h1 {
+  padding: 10;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.content-reemb h2 {
+  padding: 10;
+  font-size: 2.5rem;
+}
+
+.content-reemb .cancelRes {
+  padding: 10;
+  font-size: 2rem;
+}
+
 /***  politica.html (faqs - Walter c/Vue)  ***/
 
-details{
-    background: rgba(189,43,227,.3);
-    padding: .5rem;
-    border-radius: 6px;
-    margin: .5rem;
-    cursor: pointer;
+details {
+  background: rgba(189, 43, 227, .3);
+  width: 100%;
+  padding: .5rem;
+  border-radius: 6px;
+  margin: .5rem;
+  color: black;
+  cursor: pointer;
+
 }
 
-summary{list-style: none; font-size: 1.3rem; font-weight: bold;}
-summary:hover{background: rgba(141,120,0,.2);}
-summary::before{content: '+'; padding-right: 1rem;}
-
-.rubro{display: flex;}
-
-details[open] summary ~ *{animation: sweep 1.8s ease-in-out;}
-details[open] summary::before{content: '-';}
-
-.answer{font-size: 1.2rem; background: #f2f2f2;}
+.mediosDePago{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 
 
-
-@media only screen and (max-width: 320px){
-    .content-faq .nav-faq img{width: 50%;}
-    .nav-faq h1{font-size: 1.3rem;}
-    .rubro h2{font-size: 1.2rem;}
-    .answer{font-size: 1rem;}
-    .answer .mdp .titulo h4{color: black;}
-    .answer .mdp .content-tarjetas .col-h5 h5{color: black;}
-    .content-reemb h1{font-size: 2rem;}
-    .content-reemb h2{font-size: 1.5rem;}
-    .content-reemb .cancelRes {font-size: 1rem;}
+}
+.mediosDePago img{
+  margin: .5rem;
 }
 
-@media only screen and (min-width: 480px){
-    .content-faq .nav-faq img{width: 40%;}
-    .nav-faq h1{font-size: 2.5rem;}
-    .rubro h2{font-size: 1.8rem;}
-    .answer{font-size: 1.2rem;}
-    .answer .mdp .titulo h4{color: black;}
-    .answer .mdp .content-tarjetas .col-h5 h5{color: black;}
-    .content-reemb h1{font-size: 2rem;}
-    .content-reemb h2{font-size: 1.5rem;}
-    .content-reemb .cancelRes {font-size: 1rem;}
+summary {
+  list-style: none;
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 
-@media only screen and (min-width: 768px){
-    .content-faq .nav-faq img{width: 25%;}
-    .nav-faq h1{font-size: 2.7rem;}
-    .rubro h2{font-size: 2.0rem;}
-    .answer{font-size: 1.2rem;}
-    .answer .mdp .titulo h4{color: black;}
-    .answer .mdp .content-tarjetas .col-h5 h5{color: black;}
-    .content-reemb h1{font-size: 2rem;}
-    .content-reemb h2{font-size: 1.5rem;}
-    .content-reemb .cancelRes {font-size: 1rem;}
+summary:hover {
+  background: rgba(174, 39, 223, 0.2);
 }
 
-@media only screen and (min-width: 1024px){
-    .content-faq .nav-faq img{width: 20%;}
-    .nav-faq h1{font-size: 3.0rem;}
-    .rubro h2{font-size: 2.5rem;}
-    .answer{font-size: 1.2rem;}
-    .answer .mdp .titulo h4{color: black;}
-    .answer .mdp .content-tarjetas .col-h5 h5{color: black;}
-    .content-reemb h1{font-size: 2rem;}
-    .content-reemb h2{font-size: 1.5rem;}
-    .content-reemb .cancelRes {font-size: 1rem;}
+summary::before {
+  content: '+';
+  padding-right: 1rem;
 }
 
-@media only screen and (min-width: 1200px){
-    .content-faq .nav-faq img{width: 15%;}
-    .nav-faq h1{font-size: 3.0rem;}
-    .rubro h2{font-size: 2.5rem;}
-    .answer{font-size: 1.2rem;}
-    .answer .mdp .titulo h4{color: black;}
-    .answer .mdp .content-tarjetas .col-h5 h5{color: black;}
-    .content-reemb h1{font-size: 2rem;}
-    .content-reemb h2{font-size: 1.5rem;}
-    .content-reemb .cancelRes {font-size: 1rem;}
+.rubro {
+  display: flex;
 }
 
-@media only screen and (min-width: 1400px){
-    .content-faq .nav-faq img{width: 11%;}
-    .nav-faq h1{font-size: 3.0rem;}
-    .rubro h2{font-size: 2.5rem;}
-    .answer{font-size: 1.2rem;}
-    .answer .mdp .titulo h4{color: black;}
-    .answer .mdp .content-tarjetas .col-h5 h5{color: black;}
-    .content-reemb h1{font-size: 2rem;}
-    .content-reemb h2{font-size: 1.5rem;}
-    .content-reemb .cancelRes {font-size: 1rem;}
+details[open] summary~* {
+  animation: sweep 1.8s ease-in-out;
+}
+
+details[open] summary::before {
+  content: '-';
+}
+
+.answer {
+  font-family: 'Roboto Flex', 'sans-serif';
+  letter-spacing: 3px;
+  font-size: 1.2rem;
+  background: #f2f2f2;
+}
+
+
+@media screen and (min-width:660px) {
+  .content-faq .nav-faq{
+    width: 90%;
+  }
+  .content-faq h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width:960px) {
+  .content-faq .nav-faq{
+    width: 70%;
+  }
 }
 
 
 
-@keyframes sweep{
-    from{opacity: 0; margin-top: -10px;}
-    to{opacity: 1; margin-top: 0;}
+
+
+
+
+@keyframes sweep {
+  from {
+    opacity: 0;
+    margin-top: -10px;
+  }
+
+  to {
+    opacity: 1;
+    margin-top: 0;
+  }
 }
 
-@keyframes rotate-scale-up-vertical{0%{transform:scale(1) rotateY(0)}50%{transform:scale(2) rotateY(180deg)}100%{transform:scale(1) rotateY(360deg)}}
+@keyframes rotate-scale-up-vertical {
+  0% {
+    transform: scale(1) rotateY(0)
+  }
+
+  50% {
+    transform: scale(2) rotateY(180deg)
+  }
+
+  100% {
+    transform: scale(1) rotateY(360deg)
+  }
+}
 
 
 /*      Fuentes de donde saqué tips and tricks
